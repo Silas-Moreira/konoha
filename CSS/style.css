@@ -4,15 +4,17 @@
   }
 
   body {
-    background-image: linear-gradient(rgb(251, 113, 0), brown, black);
+    background-image: linear-gradient(rgb(251, 113, 0), orange, black);
     color: white;
+    width: 100%;
+    height: 100%;
 
   }
 
   .header-principal{
     background-image: linear-gradient(black,orange) ;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
   }
   
@@ -24,7 +26,7 @@
     display: flex;
     list-style: none;
     justify-content: space-evenly;
-    width: 600px;
+    width: 900px;
     height: 150px;
     align-items: center;
 }
@@ -34,8 +36,8 @@
   width: 150px;
 }
 
-.main-img-naruto {
-  height: 1200px;
+.img-konoha {
+  width: 100%;
   background-color: orange;
   background-image: url(../img/Naruto-konoha.png);
   background-repeat: no-repeat;
@@ -43,6 +45,7 @@
 .quadrados{
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 .quadrados div {
@@ -56,15 +59,21 @@
 }
 
 .curiosidade01 {
-  background-image: linear-gradient(to right, brown, black, brown)
+  background-image: linear-gradient(to right, brown, black, brown);
+  background-size: 500% 100%;
+  animation: degrade-animado1 5s infinite alternate;
 }
 
 .curiosidade02 {
-  background-image: linear-gradient(to right, blue,black, brown);
+  background-image: linear-gradient(to right,purple,black,rgb(239, 94, 16),black);
+  background-size: 500% 100%;
+  animation: degrade-animado2 5s infinite alternate;
 }
 
 .curiosidade03 {
-  background-image: linear-gradient(to right, black, #553939,black);
+  background-image: linear-gradient(to right, black, rgba(238, 10, 10, 0.3),purple,black);
+  background-size: 500% 100%;
+  animation: degrade-animado3 5s infinite alternate;
 }
 
 .img-curiosidade01 {
@@ -83,4 +92,76 @@
   height: 50%;
   width: 100%;
   border-radius: 25px;
+}
+
+@keyframes degrade-animado1 { 
+  0%{
+    background-position-x: 0%;
+  }
+  100%{
+    background-position-x: 100%;
+  }
+}
+
+@keyframes degrade-animado2 { 
+  0%{
+    background-position-x: 0%;
+  }
+  100%{
+    background-position-x: 100%;
+  }
+}
+
+@keyframes degrade-animado3 { 
+  0%{
+    background-position-x: 0%;
+  }
+  100%{
+    background-position-x: 100%;
+  }
+}
+
+.video {
+  display: flex;
+  justify-content:center;
+}
+
+
+
+.img-linkedin{
+  height: 150px;
+  width: 150px;
+}
+
+.img-github{
+  height: 135px;
+  width: 130px;
+}
+
+.menu-rodape{
+  color: white;
+}
+
+.lista-rodape {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  width: 100%;
+  height: 35px;
+  align-items:flex-end;
+}
+.circulos{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.circulos div {
+  width: 120px;
+  height: 150px;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  
+  
 }
