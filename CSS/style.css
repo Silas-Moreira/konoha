@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-image: linear-gradient(rgb(251, 113, 0), brown, black);
+    color: white;
+
+  }
+
+  .header-principal{
+    background-image: linear-gradient(black,orange) ;
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+  
+  .menu-topo{
+    color: white;
+  }
+
+  .lista-menu-topo {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 600px;
+    height: 150px;
+    align-items: center;
+}
+
+.img-logo{
+  height: 150px;
+  width: 150px;
+}
+
+.main-img-naruto {
+  height: 1200px;
+  background-color: orange;
+  background-image: url(../img/Naruto-konoha.png);
+  background-repeat: no-repeat;
+}
+.quadrados{
+  display: flex;
+  justify-content: space-around;
+}
+
+.quadrados div {
+    width: 350px;
+    height: 615px;
+    border-radius: 25px;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border: 5px solid black;
+}
+
+.curiosidade01 {
+  background-image: linear-gradient(to right, brown, black, brown)
+}
+
+.curiosidade02 {
+  background-image: linear-gradient(to right, blue,black, brown);
+}
+
+.curiosidade03 {
+  background-image: linear-gradient(to right, black, #553939,black);
+}
+
+.img-curiosidade01 {
+  height: 50%;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.img-curiosidade02 {
+  height: 50%;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.img-curiosidade03 {
+  height: 50%;
+  width: 100%;
+  border-radius: 25px;
+}
