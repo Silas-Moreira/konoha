@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,22 @@
     <title>Konoha</title>
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
+
 <body>
-    <header class="header-principal">
+    <header class="header">
         <div class="logo">
             <img src="./img/konoha.png" class="img-logo" alt="Logotipo da aldeia da folha">
         </div>
         <div class="menu-topo">
-                <nav>
-                <ul class="lista-menu-topo">
-                    <li><h2>Home</h2></li>
-                    <li><h2>Curiosidades</h2></li>
-                    <li><h2>Vídeo</h2></li>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="bt-mobile" aria-haspopup="true" aria-controls="lista-menu-topo" aria-expanded="false">Menu
+                    <span id="hamburguer"></span>
+                </button>
+                <ul class="lista-menu-topo" role="menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#curiosidades">Curiosidades</a></li>
+                    <li><a href="#video">Vídeo</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -25,68 +31,92 @@
 
     <div class="img-cidade">
         <img src="./img/Naruto-konoha.png" class="img-konoha" alt="imagem com a cidade de Konoha ao fundo e o 7º hokage Naruto de costas">
-     </div>
+    </div>
 
-    <main>
+    <main id="curiosidades">
         <h2>Curiosidades da Cidade</h2>
         <div class="quadrados">
             <div class="curiosidade01">
                 <img src="./img/hashirama-madara.png" class="img-curiosidade01" alt="Estatuas de Hashirama e Madara">
-                <p><h3>fundação</h3></p>
-                <p>No início dos tempos, durante a Era dos Estados Combatentes, os ninjas eram compostos por clãs mercenários que pensavam apenas em lutar. Os grupos mais fortes eram os das famílias Senju e Uchiha, que duelavam constantemente.</p>
-                <p>Um dia, Hashirama Senju, líder do seu clã, decidiu pedir uma trégua para os Uchiha após Madara Uchiha, seu amigo de infância, passar a liderar sua família.</p>
-                <p>As duas famílias colocaram um fim a sua rivalidade, juntaram forças e criaram Konohagakure. Pouco tempo depois, outras vilas surgiram, o que encerrou o período da Era dos Estados Combatentes.
-                </p>
+                
+                <h3>fundação</h3>
+                
+                <p> início dos tempos, durante a Era dos Estados Combatentes, os ninjas eram compostos por clãs mercenários que pensavam apenas em lutar. Os grupos mais fortes eram os das famílias Senju e Uchiha, que duelavam constantemente.<br>
+                Um dia, Hashirama Senju, líder do seu clã, decidiu pedir uma trégua para os Uchiha após Madara. <br>
+                Uchiha, seu amigo de infância, passar a liderar sua família.
+                As duas famílias colocaram um fim a sua rivalidade, juntaram forças e criaram Konohagakure. <br>
+                Pouco tempo depois, outras vilas surgiram, o que encerrou o período da Era dos Estados Combatentes.</p>
+                
             </div>
             <div class="curiosidade02">
                 <img src="./img/naruto-sasuke2.jpg" class="img-curiosidade02" alt="Naruto-Sasuke">
-                <p><h3>Naruto x Sasuke</h3></p>
-                <p>Sasuke e Naruto são as reencarnações de Indra e Ashura, ambos filhos de Hagoromo Otsutsuki, conhecido como o Sábio dos Seis Caminhos. Frequentemente Indra e Ashura são representados como a lua e o sol, dois apostos rivais que no fundo acabam se complementando.</p>
-                <p>Sasuke e Naruto acabam representando alguns desses elementos em suas cores e personalidades. Enquanto Sasuke possui um comportamento mais sério e geralmente aparece vestindo roupas azuis ou pretas, Naruto é espontâneo e toda a sua paleta de cores gira entorno do amarelo e laranja.</p>
+                <p>
+                <h3>Naruto x Sasuke</h3>
+                </p>
+                <p>Sasuke e Naruto são as reencarnações de Indra e Ashura, ambos filhos de Hagoromo Otsutsuki, conhecido
+                    como o Sábio dos Seis Caminhos. Frequentemente Indra e Ashura são representados como a lua e o sol,
+                    dois apostos rivais que no fundo acabam se complementando.</p>
+                <p>Sasuke e Naruto acabam representando alguns desses elementos em suas cores e personalidades. Enquanto
+                    Sasuke possui um comportamento mais sério e geralmente aparece vestindo roupas azuis ou pretas,
+                    Naruto é espontâneo e toda a sua paleta de cores gira entorno do amarelo e laranja.</p>
             </div>
             <div class="curiosidade03">
                 <img src=".//img/pain2.webp" class="img-curiosidade03" alt="pain">
-                <p><h3> Ataque de Pain</h3></p>
-                <p>A aldeia da folha foi totalmente destruída durante o ataque de Pain, que estava a procura de Naruto para capturar a Raposa de nove caldas e continuar seu plano de colocar o mundo dentro de um Genjutsu.</p>
-                <p>O arco de Pain é considerado como um dos melhores de toda a saga Naruto, tem personagens e roteiros bem desenvolvidos e momentos marcantes para toda continuidade da história, também vemos a evolução e amadurecimento do protagonista, que finalmente conquista o respeito e prestígio que sempre buscou.</p>
+                <p>
+                <h3> Ataque de Pain</h3>
+                </p>
+                <p>A aldeia da folha foi totalmente destruída durante o ataque de Pain, que estava a procura de Naruto
+                    para capturar a Raposa de nove caldas e continuar seu plano de colocar o mundo dentro de um
+                    Genjutsu.</p>
+                <p>O arco de Pain é considerado como um dos melhores de toda a saga Naruto, tem personagens e roteiros
+                    bem desenvolvidos e momentos marcantes para toda continuidade da história, também vemos a evolução e
+                    amadurecimento do protagonista, que finalmente conquista o respeito e prestígio que sempre buscou.
+                </p>
             </div>
-                
+
 
         </div>
-  
+
     </main>
 
-    <section>
+    <section id="video">
         <h2>Vídeo</h2>
         <div id="video">
 
-            <iframe width="1019" height="573" src="https://www.youtube.com/embed/0JUzSyC2g3E" title="A HISTÓRIA DE KONOHA! A VILA OCULTA DA FOLHA | KONOHAGAKURE" frameborder="0" allow="accelerometer; autoplay loop muted; clipboard-write; encrypted-media; 
+            <iframe width="1019" height="573" src="https://www.youtube.com/embed/0JUzSyC2g3E"
+                title="A HISTÓRIA DE KONOHA! A VILA OCULTA DA FOLHA | KONOHAGAKURE" frameborder="0" allow="accelerometer; autoplay loop muted; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture" allowfullscreen poster="./img/konoha.png"></iframe></iframe>
         </div>
     </section>
 
-    <footer class="Rodape">
+    <footer class="Rodape", id="contato">
         <div class="circulos">
-                <div class="linkedin">
-                    <a href="https://www.linkedin.com/in/silas-moreira-rodrigues-8213a3105/">
-                <img src="./img/linkedin.png" class="img-linkedin" alt="Logotipo do linkedin">
-                    </a>
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/silas-moreira-rodrigues-8213a3105/">
+                    <img src="./img/linkedin.png" class="img-linkedin" alt="Logotipo do linkedin">
+                </a>
             </div>
             <div class="github">
                 <a href="https://github.com/Silas-Moreira">
-                <img src="./img/GitHub.png" class="img-github" alt="Logotipo do github">
+                    <img src="./img/GitHub.png" class="img-github" alt="Logotipo do github">
                 </a>
             </div>
-            
+
         </div>
         <div class="menu-rodape">
             <nav>
                 <ul class="lista-rodape">
-                    <li><h2>LinkedIn</h2></li>
-                    <li><h2>GitHub</h2></li>
+                    <li>
+                        <h2>LinkedIn</h2>
+                    </li>
+                    <li>
+                        <h2>GitHub</h2>
+                    </li>
                 </ul>
             </nav>
         </div>
     </footer>
 </body>
+<script src="./script.js"></script>
+
 </html>

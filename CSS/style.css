@@ -3,6 +3,15 @@
     padding: 0;
   }
 
+  a{
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  a:hover {
+    background: rgba(0, 0, 0, .20);
+  }
+
   body {
     background-image: linear-gradient(rgb(251, 113, 0), orange, black);
     color: white;
@@ -11,34 +20,101 @@
 
   }
 
-  .header-principal{
-    background-image: linear-gradient(black,orange) ;
-    display: flex;
-    justify-content: space-between;
-
-  }
-  
-  .menu-topo{
-    color: white;
+  .header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
   }
 
   .lista-menu-topo {
     display: flex;
     list-style: none;
-    justify-content: space-evenly;
-    width: 900px;
-    height: 150px;
+    gap: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 100%;
+    height: 100px;
     align-items: center;
 }
+  .lista-menu-topo a {
+    display: block;
+  }
+
+  #bt-mobile{
+    display: none;
+  }
+  @media (max-width: 600px) {
+    
+    .lista-menu-topo {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 100px;
+      right: 0px;
+      background: blueviolet;
+      height: 0px;
+      transition: 1s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+
+    }
+    #nav.active .lista-menu-topo {
+      height: calc(100vh - 100px);
+      visibility: visible;
+      overflow-y: auto;
+
+    }
+    .lista-menu-topo a {
+      padding: 16px;
+      margin: 0 16px;
+      border-bottom: 2px solid rgba(0,0, 0, .05);
+    }
+    #bt-mobile{
+      display:flex;
+      padding: 10px 10px;
+      font-size: 16px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 10px;
+    }
+    #hamburguer {
+      border-top: 2px solid;
+      width: 20px;
+    }
+    #hamburguer::after, #hamburguer::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  }
+
 
 .img-logo{
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
 }
 
 .img-konoha {
   width: 100%;
-  background-color: orange;
   background-image: url(../img/Naruto-konoha.png);
   background-repeat: no-repeat;
 }
