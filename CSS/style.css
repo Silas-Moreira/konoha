@@ -140,7 +140,7 @@ width: 100%;
   border: 5px solid black;
 }
 
-.curiosidade01 {
+.curiosidade01, .curiosidade02, .curiosidade03 {
 background-image: linear-gradient(to right, brown, black, brown);
 background-size: 500% 100%;
 animation: degrade-animado1 5s infinite alternate;
@@ -148,29 +148,13 @@ animation: degrade-animado1 5s infinite alternate;
 
 .curiosidade02 {
 background-image: linear-gradient(to right,purple,black,rgb(239, 94, 16),black);
-background-size: 500% 100%;
-animation: degrade-animado2 5s infinite alternate;
 }
 
 .curiosidade03 {
 background-image: linear-gradient(to right, black, rgba(238, 10, 10, 0.3),purple,black);
-background-size: 500% 100%;
-animation: degrade-animado3 5s infinite alternate;
 }
 
-.img-curiosidade01 {
-height: 50%;
-width: 100%;
-border-radius: 25px;
-}
-
-.img-curiosidade02 {
-height: 50%;
-width: 100%;
-border-radius: 25px;
-}
-
-.img-curiosidade03 {
+.img-curiosidade01, .img-curiosidade02, .img-curiosidade03 {
 height: 50%;
 width: 100%;
 border-radius: 25px;
